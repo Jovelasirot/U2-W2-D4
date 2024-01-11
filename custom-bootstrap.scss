@@ -1,5 +1,5 @@
-@import 'scss/functions'; 
-@import 'scss/variables'; 
+@import './scss/functions'; 
+@import './scss/variables'; 
 
 
 
@@ -7,16 +7,20 @@ $new-primary: #383257 ;
 $new-secondary: #1ACB98;
 
 
+
 $new-theme-colors: (
   'primary': $new-primary,
   'secondary': $new-secondary,
+  'heroBg' : #7550FE,
+  'herotext' : #B7A3FF
 );
 
+.roundedmax{
+  border-radius: 50%;
+}
 
 $theme-colors: map-merge($theme-colors, $new-theme-colors);
 
 
 
-
-$spacers: map-merge($spacers, $new-spacers);
-@import 'scss/bootstrap.scss';
+@import './scss/bootstrap.scss';
