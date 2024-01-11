@@ -1,30 +1,31 @@
 @import './scss/functions'; 
 @import './scss/variables'; 
 
-
-
 $new-primary: #383257 ;
 $new-secondary: #1ACB98;
-
-
 
 $new-theme-colors: (
   'primary': $new-primary,
   'secondary': $new-secondary,
   'heroBg' : #7550FE,
   'herotext' : #B7A3FF,
-  'iconbg' : #F5F4F8
-
+  'iconbg' : #F5F4F8,
+  'midbg' : #FFEEDA,
+  'midcrl' : #D3A36E,
+  'textcrl' : #9F9AAA
 );
 
 .roundedmax{
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
+
 $theme-colors: map-merge($theme-colors, $new-theme-colors);
-
-
 
 @import './scss/bootstrap.scss';
