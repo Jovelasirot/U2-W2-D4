@@ -12,10 +12,14 @@ $new-theme-colors: (
   'primary': $new-primary,
   'secondary': $new-secondary,
   'heroBg' : #7550FE,
-  'herotext' : #B7A3FF
+  'herotext' : #B7A3FF,
+  'iconbg' : #F5F4F8
+
 );
 
 .roundedmax{
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 

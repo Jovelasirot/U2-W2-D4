@@ -14,7 +14,7 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <img src="./assets/logo.svg" alt="logo">
+          <a class="navbar-brand" href="#">Navbar</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -30,7 +30,7 @@
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
                 <button
-                  class="btn dropdown-toggle text-primary"
+                  class="btn dropdown-toggle text-dark"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
@@ -57,15 +57,24 @@
                 >
                   Accounts
                 </button>
-                
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <img
-          src="./assets/avatar-1.jpg"
-          alt="avatar"
-          class="roundedmax ml-1"
-          style="width: 50px"
-        />
+        <div class="navright d-flex justify-content-center align-items-center">
+          <div
+            class="bg-iconbg roundedmax p-2 d-flex justify-content-center align-items-center"
+          >
+            <i class="bi bi-bell"></i>
+          </div>
+          <div class="avatar">
+            <img
+              src="./assets/avatar-1.jpg"
+              alt="avatar"
+              class="roundedmax mx-3"
+            />
+          </div>
+        </div>
       </nav>
     </header>
     <main>
