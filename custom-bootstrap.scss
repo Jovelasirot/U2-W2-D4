@@ -1,0 +1,22 @@
+@import 'scss/functions'; 
+@import 'scss/variables'; 
+
+
+
+$new-primary: #383257 ;
+$new-secondary: #1ACB98;
+
+
+$new-theme-colors: (
+  'primary': $new-primary,
+  'secondary': $new-secondary,
+);
+
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+
+
+
+$spacers: map-merge($spacers, $new-spacers);
+@import 'scss/bootstrap.scss';
